@@ -1,6 +1,282 @@
 main {
-    min-height:1000px;
+    min-height:1500px;
 }
+
+.main1 {
+    min-height:800px;
+}
+
+.main2 {
+    min-height:2500px;
+}
+
+.hey {
+    text-align: center;
+    margin:30px;
+    padding:10px;
+    border-bottom:1px solid black;
+}
+
+/***************************************************************/
+
+/*Forside*/
+
+.start {
+    margin-top:100px;
+    padding:20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.start h2 {
+    color:lightsteelblue;
+    margin-top:100px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size:45px;
+}
+
+.start h3 {
+    color:white;
+    margin-top:100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size:35px;
+    font-weight: 700;
+}
+
+.start img {
+    width:100%;
+    height:300px;
+}
+
+/*********************************************************/
+
+/*Arrangementer*/
+
+.start1 img {
+    width:50%;
+    height:400px;
+}
+
+.start1 p {
+    margin-top:20px;
+    width:50%;
+    font-size:18px;
+}
+
+.start1 h2 {
+    color:black;    
+}
+
+.start1 h3 {
+    width:50%;
+}
+
+.start2 img {
+    width:50%;
+    height:300px;
+}
+
+.start2 h3 {
+    width:50%;
+}
+
+.start2 p {
+    width:50%;
+    font-size:20px;
+}
+
+.start2 h2 {
+    color:black;
+}
+
+.carl img {
+    width:70%;
+}
+
+.carl h2 {
+    color:black;
+}
+
+.carl p {
+    margin-top:10px;
+    font-size:17px;
+    width:80%;
+}
+
+.joey img {
+    width:70%;
+    height:400px;
+}
+
+.joey h2 {
+    color:black;
+}
+
+.joey p {
+    margin-top:10px;
+    font-size:17px;
+    width:80%;
+}
+
+.gilli img {
+    width:70%;
+    height:300px;
+}
+
+.gilli p {
+    margin-top:10px;
+    font-size:17px;
+    width:80%;
+}
+
+.gilli h2 {
+    color:black;
+}
+
+section {
+    background-color:rgb(46, 42, 42);
+}
+
+.container {
+    margin-top:10px;
+}
+
+.container h1, h2, small {
+    color:white;
+}
+
+/*********************************************************/
+
+/*Billetter*/
+
+canvas {
+    background-color:lightgrey;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+footer {
+    background-color:lightgrey;
+}
+
+/******************************************************/
+
+/*Kontakt*/
+
+.contact {
+   width:50%;
+}
+
+#info {
+    background-color: rgba(211, 211, 211, 0.514);
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+    border-radius:10px;
+}
+
+#form {
+    margin-top: 50px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+  #form h3 {
+      text-align:center;
+  }
+  
+  #form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px; 
+  }
+  
+  button {
+    margin-left: .5em;
+  }
+
+  /*****************************************************/
+
+  /*Admin*/
+
+  #admin {
+      background-color:lightgrey;
+  }
+
+  #admin input {
+     margin:10px;
+     display:block;
+     margin-left:auto;
+     margin-right:auto;
+  }
+
+  #admin textarea {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #admin h3 {
+      text-align:center;
+      padding:20px;
+  }
+
+  #admin p {
+      text-align:center;
+      font-weight:700;
+  }
+
+  #time {
+      width:5%;
+  }
+
+  #day {
+      width:15%;
+  }
+
+  #button {
+      width:5%;
+  }
+
+
+
+/*******************************************************/
+
+/*Slider*/
 
 .carousel-fade .carousel-inner .item {
     opacity: 0;
@@ -140,4 +416,4 @@ main {
   }
   @media screen and (max-width: 640px){
       .hero h1 { font-size: 4em; }    
-  }       
+  }

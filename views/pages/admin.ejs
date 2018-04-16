@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+<main>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <h1 class="hey">Admin</h1>
+    
+    <a href="/logout">Log ud</a>
+
+    <form id="admin">
+        <h3>Opret eller redigere et arrangement</h3>
+        <p>
+        Arrangement navn:
+        </p>   
+        <input type="name" name="arrangement_navn">
+        <br>
+        <p>
+        Arrangement kategori:
+        </p> 
+        <input type="name" name="arrangement_kategori">
+        <br>
+        <p>
+        Arrangement dag og tid:
+        </p> 
+        <input type="datetime-local" name="bdaytime" id="day">
+        <br>
+        <p>
+         Arrangement pris:
+         </p>  
+        <input type="text" name="price">
+        <br>
+        <p>
+        Arrangement info:
+         </p> 
+        <textarea type="text"></textarea>
+        <br>
+        <input type="submit" value="Send" id="button">
+      </form>
+      
+        
+</main>
+    
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+    <%include ../partials/javascript %>
+    
+</body>
+</html>

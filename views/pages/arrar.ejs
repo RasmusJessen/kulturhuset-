@@ -1,20 +1,105 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
      <% include ../partials/head %>
 </head>
 <body>
-    <main>
+    <main class="main2">
             <header>
                     <%include ../partials/header %>
                 </header>
+
+                <h1 class="hey">Arrangementer</h1>
+
+<div class="start2">
+        <div class="col-lg-4">
+                <h2><%= arrangementer[0].titel %></h2>
+                <img src="img/<%=arrangementer[0].filnavn %>" alt="">
+                <h3><%= arrangementer[0].dato %></h3>
+         </div>
+     
+     
+     <div class="col-lg-4">
+             <h2><%= arrangementer[1].titel %></h2>
+             <img src="img/<%=arrangementer[1].filnavn %>" alt="">
+             <h3><%= arrangementer[1].dato %></h3>
+        </div>
+        
+        
+        <div class="col-lg-4">
+                <h2><%= arrangementer[6].titel %></h2>
+                <img src="img/<%=arrangementer[6].filnavn %>" alt="">
+                <h3><%= arrangementer[6].dato %></h3>
+        </div>
+        
+    <div class="col-lg-4">
+                <h2><%= arrangementer[2].titel %></h2>
+                <img src="img/<%=arrangementer[2].filnavn %>" alt="">
+                <h3><%= arrangementer[2].dato %></h3>
+        </div>
+
+        <div class="col-lg-4">
+                        <h2><%= arrangementer[3].titel %></h2>
+                        <img src="img/<%=arrangementer[3].filnavn %>" alt="">
+                        <h3><%= arrangementer[3].dato %></h3>
+                </div>
+
+                <div class="col-lg-4">
+                        <h2><%= arrangementer[4].titel %></h2>
+                        <img src="img/<%=arrangementer[4].filnavn %>" alt="">
+                        <h3><%= arrangementer[4].dato %></h3>
+                </div>
+
+                <div class="col-lg-4">
+                         <h2><%= arrangementer[5].titel %></h2>
+                         <img src="img/<%=arrangementer[5].filnavn %>" alt="">
+                         <h3><%= arrangementer[5].dato %></h3>
+                 </div>  
+                        
+                        <div class="col-lg-4">
+                                <h2><%= arrangementer[6].titel %></h2>
+                                <img src="img/<%=arrangementer[6].filnavn %>" alt="">
+                                <h3><%= arrangementer[6].dato %></h3>
+                        </div>
+
+                <div class="col-lg-4">
+                        <h2><%= arrangementer[7].titel %></h2>
+                        <img src="img/<%=arrangementer[7].filnavn %>" alt="">
+                         <h3><%= arrangementer[7].dato %></h3>
+                 </div>
+
+                 <div class="col-lg-4">
+                                <h2><%= arrangementer[8].titel %></h2>
+                                <img src="img/<%=arrangementer[8].filnavn %>" alt="">
+                                <h3><%= arrangementer[8].dato %></h3>
+                        </div>
                 
-            
-                <%include ../partials/javascript %>
+                        <div class="col-lg-4">
+                                <h2><%= arrangementer[9].titel %></h2>
+                                <img src="img/<%=arrangementer[9].filnavn %>" alt="">
+                                <h3><%= arrangementer[9].dato %></h3>
+                                </div>
+
+                        <div class="col-lg-4">
+                                <h2><%= arrangementer[10].titel %></h2>
+                                <img src="img/<%=arrangementer[10].filnavn %>" alt="">
+                                <h3><%= arrangementer[10].dato %></h3>
+                        </div>
+
+                        <div class="col-lg-4">
+                                <h2><%= arrangementer[11].titel %></h2>
+                                <img src="img/<%=arrangementer[11].filnavn %>" alt="">
+                                <h3><%= arrangementer[11].dato %></h3>
+                                </div>
+
+</div>
+        
             </main>
           
             <footer>
                 <%include ../partials/footer %>
             </footer>
+
+            <%include ../partials/javascript %>
+
 </body>
 </html>

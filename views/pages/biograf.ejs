@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <main>
+
+        <header>
+            <% include ../partials/header %>
+        </header>
+
+        <h1 class="hey">Biograffilm</h1>
+
+        <div class="start1">
+            <div class="col-lg-4 col-sm-12">
+                <img src="img/<%=arrangementer[1].filnavn %>" alt="">
+                <p><%= arrangementer[1].info %></p>
+                <h2><strong>Varighed:</strong><%= arrangementer[1].varighed %></h2>
+                <h3><strong>Kl.</strong><%= arrangementer[1].tid %></h3>
+                <h3><%= arrangementer[1].dato %></h3>
+                <p><%= arrangementer[1].pris %>KR.</p>
+                <button><a href="/bestil">Bestil billetter</a></button>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                <img src="img/<%=arrangementer[4].filnavn %>" alt="">
+                <p><%= arrangementer[4].info %></p>
+                <h2><strong>Varighed:</strong><%= arrangementer[4].varighed %></h2>
+                <h3><strong>Kl.</strong><%= arrangementer[4].tid %></h3>
+                <h3><%= arrangementer[4].dato %></h3>
+                <p><%= arrangementer[4].pris %>KR.</p>
+                <button><a href="/bestil">Bestil billetter</a></button>
+            </div>
+
+            <div class="col-lg-4 col-sm-12">
+                    <img src="img/<%=arrangementer[5].filnavn %>" alt="">
+                    <p><%= arrangementer[5].info %></p>
+                    <h2><strong>Varighed:</strong><%= arrangementer[5].varighed %></h2>
+                    <h3><strong>Kl.</strong><%= arrangementer[5].tid %></h3>
+                    <h3><%= arrangementer[5].dato %></h3>
+                    <p><%= arrangementer[5].pris %>KR.</p>
+                    <button><a href="/bestil">Bestil billetter</a></button>
+                </div>
+        </div>
+            
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+    <% include ../partials/javascript %>
+</body>
+</html>

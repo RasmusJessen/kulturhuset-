@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+     <main>
+
+         <header>
+             <% include ../partials/header %>
+            </header>
+
+            <h1 class="hey">Koncerter</h1>
+               
+            <div class="carl">
+                <div class="col-lg-4">
+                    <h2><%= arrangementer[3].titel %></h2>
+                    <img src="img/<%=arrangementer[3].filnavn %>" alt="">
+                    <p><%= arrangementer[3].info %></p>
+                    <h2><strong>Varighed:</strong><%= arrangementer[3].varighed %></h2>
+                    <h3><strong>Kl.</strong><%= arrangementer[3].tid %></h3>
+                    <h3><%= arrangementer[3].dato %></h3>
+                    <p><%= arrangementer[3].pris %>KR.</p>
+                </div>
+            </div>
+
+        <div class="joey">
+            <div class="col-lg-4">
+                <h2><%= arrangementer[10].titel %></h2>
+                <img src="img/<%=arrangementer[10].filnavn %>" alt="">
+                <p><%= arrangementer[10].info %></p>
+                <h2><strong>Varighed:</strong><%= arrangementer[10].varighed %></h2>
+                <h3><strong>Kl.</strong><%= arrangementer[10].tid %></h3>
+                <h3><%= arrangementer[10].dato %></h3>
+                <p><%= arrangementer[10].pris %>KR.</p>
+            </div>
+         </div>
+
+            <div class="gilli">
+                <div class="col-lg-4">
+                    <h2><%= arrangementer[11].titel %></h2>
+                    <img src="img/<%=arrangementer[11].filnavn %>" alt="">
+                    <p><%= arrangementer[11].info %></p>
+                    <h2><strong>Varighed:</strong><%= arrangementer[11].varighed %></h2>
+                    <h3><strong>Kl.</strong><%= arrangementer[11].tid %></h3>
+                    <h3><%= arrangementer[11].dato %></h3>
+                    <p><%= arrangementer[11].pris %>KR.</p>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+
+        <%include ../partials/javascript %>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <%include ../partials/head %>
+</head>
+<body>
+    <main>
+
+        
+        <header>
+            <%include ../partials/header %>
+        </header>
+
+        <h1 class="hey">Teaterforstillinger</h1>
+
+        <div class="start1">
+            <div class="col-lg-4">
+                <h2><%= arrangementer[0].titel %></h2>
+                <img src="img/<%=arrangementer[0].filnavn %>" alt="">
+                <p><%= arrangementer[0].info %></p>
+                <h2><strong>Varighed:</strong><%= arrangementer[0].varighed %></h2>
+                <h3><strong>Kl.</strong><%= arrangementer[0].tid %></h3>
+                <h3><%= arrangementer[0].dato %></h3>
+                <p><%= arrangementer[0].pris %>KR.</p>
+            </div>
+
+            <div class="col-lg-4">
+                    <h2><%= arrangementer[6].titel %></h2>
+                    <img src="img/<%=arrangementer[6].filnavn %>" alt="">
+                    <p><%= arrangementer[6].info %></p>
+                    <h2><strong>Varighed:</strong><%= arrangementer[6].varighed %></h2>
+                    <h3><strong>Kl.</strong><%= arrangementer[6].tid %></h3>
+                    <h3><%= arrangementer[6].dato %></h3>
+                    <p><%= arrangementer[6].pris %>KR.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h2><%= arrangementer[9].titel %></h2>
+                    <img src="img/<%=arrangementer[9].filnavn %>" alt="">
+                    <p><%= arrangementer[9].info %></p>
+                    <h2><strong>Varighed:</strong><%= arrangementer[9].varighed %></h2>
+                    <h3><strong>Kl.</strong><%= arrangementer[9].tid %></h3>
+                    <h3><%= arrangementer[9].dato %></h3>
+                    <p><%= arrangementer[9].pris %>KR.</p>
+                </div>
+        </div>
+        
+    </main>
+    
+        <footer>
+            <%include ../partials/footer %>
+        </footer>
+
+    <% include ../partials/javascript %>
+</body>
+</html>

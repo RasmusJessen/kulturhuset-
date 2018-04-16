@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <%include ../partials/head %>
+</head>
+
+<body>
+<main class="main1">
+    <header>
+         <%include ../partials/header %>
+    </header>
+
+    <h1 class="hey">Kontakt</h1>
+
+    <div class="col-lg-9">
+        <div class="contact">
+            <p>Kontakt os her inde hvis du har nogen spørgsmål vedrørende arrangementer eller noget ligende. Du kan enten vælge at skrive til
+                og så svarer vi tilbage inden for 1-3 dage. Du kan også vælge at ringe ind til os, vores telefoner står åben mandag-torsdag fra kl. 10-16.
+            </p>
+            <form id="form" action="/kontakt" method="post" role="form">
+                <h3>Skriv til os</h3>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="navn">
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="email">
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="besked"></textarea>
+                </div>
+                <div class="button">
+                    <button id="submit" type="submit">Send your message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    <div class="col-lg-3">
+        <div id="info">
+                <h3>Telefon:</h3>    
+                <p>12345678</p>
+                <h3>Email:</h3>
+                <p>Kulturhuset@mail.dk</p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+     <%include ../partials/footer %>
+</footer>
+
+<%include ../partials/javascript %>
+    
+</body>
+</html>

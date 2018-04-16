@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <%include ../partials/head %> 
+</head>
+
+<body>
+    <main>
+        <header>
+            <%include ../partials/header %>
+        </header>
+        
+        <div class="carousel fade-carousel carousel-fade slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+                <!-- Overlay -->
+                <div class="overlay"></div>
+              
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#bs-carousel" data-slide-to="1"></li>
+                  <li data-target="#bs-carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item slides active">
+                    <div class="slide-1"></div>
+                    <div class="hero">
+                      <hgroup>
+                          <h1>Velkommen til Kulturhuset</h1>        
+                      </hgroup>
+                    </div>
+                  </div>
+                  <div class="item slides">
+                    <div class="slide-2"></div>
+                    <div class="hero">        
+                      <hgroup>
+                          <h1>Sjov for alle der gerne vil være med</h1>        
+                      </hgroup>       
+                    </div>
+                  </div>
+                  <div class="item slides">
+                    <div class="slide-3"></div>
+                    <div class="hero">        
+                      <hgroup>
+                          <h1>Kom til alle vores sjove Arrangementer</h1>        
+                      </hgroup>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+
+<div class="start">
+  <div class="row">
+  <div class="col-lg-4">
+      <h2><strong><%=arrangementer[0].titel %></strong></h2>
+      <h3>D. 05-05</h3>
+       <img src="img/<%=arrangementer[0].filnavn %>" alt="">
+   </div>
+
+   <div class="col-lg-4">
+     <h2><strong><%=arrangementer[1].titel %> </strong></h2>
+     <h3>D. 18-05</h3>
+     <img src="img/<%=arrangementer[1].filnavn %>" alt="">
+   </div>
+
+   <div class="col-lg-4">
+      <h2 class="for"><strong><%= arrangementer[2].titel %></strong></h2>
+      <h3>D. 06-06</h3>
+      <img src="img/<%=arrangementer[2].filnavn %>" alt="">
+    </div>
+
+  </div>
+  </div>
+
+  <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+              <hgroup>
+                <h2>
+                  Tilmeld dig vores nyhedsbrev
+                </h2>
+                <h1 class="free">Det er gratis</h1>
+               </hgroup>
+             <div class="well">
+                   <form role="form" action="/home" method="post">
+                    <div class="input-group">
+                       <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+                       <button class="btn btn-info btn-lg" type="submit">Submit</button>
+                    </div>
+                   </form>
+             </div>
+               <small class="promise"><em>Vi sender ikke spam.</em></small>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    </main>
+
+    <footer>
+        <%include ../partials/footer %>
+    </footer>
+
+    <%include ../partials/javascript %>
+</body>
+</html>
