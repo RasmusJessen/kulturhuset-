@@ -2,7 +2,6 @@ var ar;
 
 module.exports = function(app) {
     app.post('/kontakt', function (req, res) {
-        console.log('test-kontakt');
         var message = '';
         var post = req.body;
         var navn = post.navn;

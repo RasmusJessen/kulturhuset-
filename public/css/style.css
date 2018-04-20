@@ -244,6 +244,14 @@ footer {
      margin-right:auto;
   }
 
+  #admin button {
+    margin:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:5%; 
+  }
+
   #admin textarea {
     display:block;
     margin-left:auto;

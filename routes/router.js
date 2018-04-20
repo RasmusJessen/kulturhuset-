@@ -7,7 +7,7 @@ module.exports = (app) => {
     require("./fordrag")(app);
     require("./bestil")(app);
     require("./koncert")(app);
-    require("./nyheder")(app);
     require("./login")(app);
     require("./admin")(app);
+    require("./hentarrangementer")(app);
 }

@@ -8,26 +8,22 @@ module.exports = function(app) {
             arrangementer: arrangementer
         });
     })
-    });
+	});
 
-    app.post('/signup', function (req, res) {
-		var message = '';
+	app.post('/admin', function (req, res) {
 		var post = req.body;
-		var name = post.user_name;
-		var pass = post.password;
-		var fname = post.first_name;
-		var lname = post.last_name;
-		var mob = post.mob_no;
-
-		// TODO: Tilføj validering af resten af de indtastede oplysninger!
-
-		if (name != "" && pass != "") {
-		
-            var sql = `
-               
+		var name = post.name;
+		var bdaytime = post.bdaytime;
+		var price = post.price;
+		var info = post.info;
+	
+		if (name != "" && bdaytime != "" && price != "" && info != "") {
+			
+			var sql = `
+			     INSERT INTO arrangementer (pris, info, titel, dato) VALUES (?, ?, ?, ?)
 				`;
-
-			db.query(sql, [fname, lname, mob, name, pass], function (err, result) {
+	
+			db.query(sql, [name, bdaytime, price, info], function (err, message) {
 				if (err) {
 					console.log ("signup error: " + err);
 				}
@@ -35,19 +31,11 @@ module.exports = function(app) {
 					message = "Succesfully! Your account has been created.";
 					res.render('pages/signup', {
 						message: message,
-						messageType: "alert-success",
-						showForm: false
 					});
 				}
-
+	
 			});
 		}
-		else {
-			message = "Username and password are required!";
-			res.render('pages/signup', {
-				message: message,
-				messageType: "alert-danger"
-			});
-		}
-	});
+	})
+	
 }

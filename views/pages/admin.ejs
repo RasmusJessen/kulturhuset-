@@ -14,17 +14,12 @@
     
     <a href="/logout">Log ud</a>
 
-    <form id="admin">
+    <form id="admin" action="/admin" method="post">
         <h3>Opret eller redigere et arrangement</h3>
         <p>
         Arrangement navn:
         </p>   
-        <input type="name" name="arrangement_navn">
-        <br>
-        <p>
-        Arrangement kategori:
-        </p> 
-        <input type="name" name="arrangement_kategori">
+        <input type="name" name="navn">
         <br>
         <p>
         Arrangement dag og tid:
@@ -41,7 +36,7 @@
          </p> 
         <textarea type="text"></textarea>
         <br>
-        <input type="submit" value="Send" id="button">
+        <button type="submit" id="submit">Send</button>
       </form>
       
         
